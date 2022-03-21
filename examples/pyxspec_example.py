@@ -62,7 +62,7 @@ m2.show()
 
 fit2start=10.0 #keV
 fit2end=30.0 #keV
-print(f"New moodel: single thermal fit with previous fit parameters (kT={apec_kt[0]:.2f}, norm={apec_norm[0]:.2f}) plus thick target model initially over range {fit2start}-{fit2end} keV")
+print(f"New model: single thermal fit with previous fit parameters (kT={apec_kt[0]:.2f}, norm={apec_norm[0]:.2f}) plus thick target model initially over range {fit2start}-{fit2end} keV")
 
 xspec.AllData.notice("3.0-50.0") #could just use this instead of new ignore command
 xspec.AllData.ignore(f"0.-{fit2start} {fit2end}-**")
@@ -92,5 +92,5 @@ print()
 
 #plot in matplotlib...eventually
 
-print(f"Script run time: {time.time()-tstart:.3f} seconds")
+print(f"Script run time: {time.time()-t0:.3f} seconds")
 
